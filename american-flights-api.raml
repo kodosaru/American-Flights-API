@@ -1,0 +1,46 @@
+#%RAML 1.0
+title: American Flights API
+
+types:
+  AmericanFlight: !include /AmericanFlight.raml
+  AmericanFlights: !include /AmericanFlights.raml
+
+/flights:
+  get:
+    queryParameters:
+      destination:
+        required: false
+        enum:
+          - SFO
+          - LAX
+          - CLE
+    responses:
+      200:
+        body:
+          application/json:
+            type: AmericanFlight[]
+            examples:
+              output: !include /AmericanFlightsExample.raml
+  post:
+    body:
+      application/json:
+        type: AmericanFlight
+        examples:
+          input: !include /AmericanFlightNoIDExample.raml
+    responses:
+      201:
+        body:
+          application/json:
+            example:
+              message: Flight added
+
+/{ID}:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: AmericanFlight[]
+            examples:
+              output: !include /AmericanFlightExample.raml
+    
