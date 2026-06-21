@@ -1,0 +1,26 @@
+{
+  "main": "american-flights-api.raml",
+  "name": "American Flights API 2",
+  "groupId": "e383a585-c901-4677-98d4-b47a8aad2427",
+  "assetId": "american-flights-api-2",
+  "version": "1.0.0",
+  "classifier": "raml",
+  "tags": [],
+  "dependencies": [
+    {
+      "groupId": "68ef9520-24e9-4cf2-b2f5-620025690913",
+      "assetId": "training-american-flight-oas-data-type",
+      "version": "1.0.0",
+      "classifier": "oas-components",
+      "packaging": "zip"
+    },
+    {
+      "groupId": "68ef9520-24e9-4cf2-b2f5-620025690913",
+      "assetId": "training-american-flight-oas-example",
+      "version": "1.0.0",
+      "classifier": "oas-components",
+      "packaging": "zip"
+    }
+  ],
+  "descriptorVersion": "1.0.0"
+}
