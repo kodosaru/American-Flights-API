@@ -3,7 +3,7 @@
   "name": "American Flights API 2",
   "groupId": "e383a585-c901-4677-98d4-b47a8aad2427",
   "assetId": "american-flights-api-2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "classifier": "raml",
   "tags": [],
   "dependencies": [
@@ -22,5 +22,8 @@
       "packaging": "zip"
     }
   ],
-  "descriptorVersion": "1.0.0"
+  "descriptorVersion": "1.0.0",
+  "organizationId": "e383a585-c901-4677-98d4-b47a8aad2427",
+  "apiVersion": "v1",
+  "originalFormatVersion": "1.0"
 }
